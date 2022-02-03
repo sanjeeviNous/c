@@ -21,6 +21,7 @@ public class logintestcase extends libraryclass{
 	{
 		 lp=new loginpage(driver);
 		lp.login("Admin","admin123");
+		lp.submit();
 	}
 	
 	@AfterMethod
@@ -28,5 +29,6 @@ public class logintestcase extends libraryclass{
 	{
 	 selenium=new seleniumutility(driver);
 		selenium.screenshot("C:\\Users\\sanjeevin\\git\\c\\hybridcucumber\\src\\test\\resources\\screenshots\\Login.png");
+	closeapp();
 	}
 }
